@@ -1,0 +1,10 @@
+# Should Axtract be started at all ?
+SERVICE_ENABLED="true"
+
+# These variables define which services to start and stop, and in which
+# order that should be done. You should not need to change anything else.
+
+# Variables for a Lab install (axtract + northbound-lab package)
+# See Admin Guide for instructions for a production install
+SUBSERVICES_START="rsyslog ax.rrddb cron redis-server rabbitmq-server beanstalkd zeo apache2 ax.eventd ax.start_gui ax.start_nbi ax.gridfs_fuse"
+SUBSERVICES_STOP="ax.gridfs_fuse ax.start_nbi ax.start_gui ax.eventd apache2 zeo beanstalkd rabbitmq-server redis-server cron ax.rrddb rsyslog"

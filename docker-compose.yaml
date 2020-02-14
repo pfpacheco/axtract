@@ -1,0 +1,24 @@
+version: "3.7"
+
+services:
+
+  mongodb:
+    container_name: mongodb
+    image: mongo:3.4
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_vol:/var/volumes/mongo/data
+
+  axtract-3.1.0:
+    container_name: "axtract-3.1.0"
+    build: "./axtract-3.1.0"
+    command: "/etc/init.d/axtract_all_daemons start"
+    ports:
+      - "8080:8080"
+    volumes:
+      - axtract_vol:/var/volumes/axtract
+
+volumes:
+  axtract_vol: null
+  mongodb_vol: null

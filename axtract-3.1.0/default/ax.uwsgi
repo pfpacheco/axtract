@@ -1,0 +1,3 @@
+SERVICE_ENABLED="false"
+# Full path to a uwsgi .ini file which specifes the app to load.
+APP_CONFIG=""

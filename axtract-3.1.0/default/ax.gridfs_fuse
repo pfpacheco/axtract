@@ -1,0 +1,9 @@
+# Set this to "true" if the init-script should be activated
+SERVICE_ENABLED="true"
+# Defines the mount point where the fuse filesystem should be activated
+GRIDFS_FUSE_MOUNT_POINT="/data/gridfs"
+# See http://docs.mongodb.org/manual/reference/connection-string/
+GRIDFS_FUSE_MONGODB_URI="mongodb://mongodb:27017"
+# Name of the database within mongodb. Default is 'gridfs_fuse' only define it if needed.
+# GRIDFS_FUSE_DATABASE=""
+TAG=""

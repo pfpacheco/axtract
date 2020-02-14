@@ -1,0 +1,45 @@
+################################################################
+#                   CONFIG FILE
+#################################################################
+
+# Change this to "true" to enable callback proxy
+SERVICE_ENABLED="false"
+
+# To enable ssl, add the certificate and key path below
+SSL_CRT=""
+SSL_KEY=""
+
+# Default configuration of CB Proxy
+# Change accordingly to deployment requirement
+CB_ADDR="127.0.0.1"
+CB_PORT="8080"
+CB_POOL="1000"
+ACS_ADDR="127.0.0.1"
+ACS_PORT="9676"
+ACS_TIMEOUT="60"
+LOG_LEVEL="DEBUG"
+
+# Multiple redis nodes can be configured by comma separated value
+# redis://pass@ip:port/db0,redis://pass@ip2:port2/db1
+# Password and index db are optional. You can do the following:
+# redis://ip:port/db0,redis://ip2:port2/db1
+# or
+# redis://ip:port,redis://ip2:port2/db0
+REDIS_SERVER="redis://127.0.0.1:6379/db0"
+REDIS_TIMEOUT="30"
+
+##################################################################
+#                   DO NOT REMOVE THE FOLLOWING LINES
+##################################################################
+EXTRA_ARGS="${EXTRA_ARGS} --log=${LOG_LEVEL} --cbaddr=${CB_ADDR} --port=${CB_PORT} --pool=${CB_POOL} --redis=${REDIS_SERVER} --redistimeout=${REDIS_TIMEOUT} --acsport=${ACS_PORT} --acsaddress=
+${ACS_ADDR} --acstimeout=${ACS_TIMEOUT} --sslcrt=${SSL_CRT} --sslkey=${SSL_KEY}"
+
+# installed package check
+if [ ${SERVICE_ENABLED} == "true" ]; then
+
+    python -c "import redis" > /dev/null 2>/dev/null
+    if [ $? -ne 0 ]; then
+        echo "ERROR: install req with apt-get install python-redis"
+    fi
+
+fi
