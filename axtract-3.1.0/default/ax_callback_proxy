@@ -31,8 +31,7 @@ REDIS_TIMEOUT="30"
 ##################################################################
 #                   DO NOT REMOVE THE FOLLOWING LINES
 ##################################################################
-EXTRA_ARGS="${EXTRA_ARGS} --log=${LOG_LEVEL} --cbaddr=${CB_ADDR} --port=${CB_PORT} --pool=${CB_POOL} --redis=${REDIS_SERVER} --redistimeout=${REDIS_TIMEOUT} --acsport=${ACS_PORT} --acsaddress=
-${ACS_ADDR} --acstimeout=${ACS_TIMEOUT} --sslcrt=${SSL_CRT} --sslkey=${SSL_KEY}"
+EXTRA_ARGS="${EXTRA_ARGS} --log=${LOG_LEVEL} --cbaddr=${CB_ADDR} --port=${CB_PORT} --pool=${CB_POOL} --redis=${REDIS_SERVER} --redistimeout=${REDIS_TIMEOUT} --acsport=${ACS_PORT} --acsaddress=${ACS_ADDR} --acstimeout=${ACS_TIMEOUT} --sslcrt=${SSL_CRT} --sslkey=${SSL_KEY}"
 
 # installed package check
 if [ ${SERVICE_ENABLED} == "true" ]; then

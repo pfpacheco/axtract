@@ -1,11 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08c488ae-d80a-4040-96b6-52cf1f070cf2" name="Default Changelist" comment="" />
+    <list default="true" id="08c488ae-d80a-4040-96b6-52cf1f070cf2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.1.0/celery/etl_config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.1.0/rabbitmq/rabbitmq.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/axtract.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/axtract.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/default/apache2" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/default/apache2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/default/ax.celeryd" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/default/ax.celeryd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/default/ax.eventd" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/default/ax.eventd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/default/ax.gridfs_fuse" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/default/ax.gridfs_fuse" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/default/ax.moving_statsd" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/default/ax.moving_statsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/default/ax.rrddb" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/default/ax.rrddb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/default/ax.uwsgi" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/default/ax.uwsgi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/default/ax_beans_http_wrapper" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/default/ax_beans_http_wrapper" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/default/ax_callback_proxy" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/default/ax_callback_proxy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/default/ax_udp_echo_plus" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/default/ax_udp_echo_plus" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/default/ax_udp_proxy" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/default/ax_udp_proxy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/default/axess" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/default/axess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/default/axtract_all_daemons" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/default/axtract_all_daemons" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/default/axtract_all_daemonse" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/default/axtract_all_daemonse" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/default/beanstalkd" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/default/beanstalkd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/default/beanstalkde" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/default/beanstalkde" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/default/cron" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/default/cron" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/default/devpts" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/default/devpts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/default/halt" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/default/halt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/default/hwclock" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/default/hwclock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/default/nss" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/default/nss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/default/rabbitmq-server" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/default/rabbitmq-server" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/default/rcS" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/default/rcS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/default/redis-server" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/default/redis-server" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/default/rsyslog" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/default/rsyslog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/default/snmpd" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/default/snmpd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/default/snmpd.axlib" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/default/snmpd.axlib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/default/tmpfs" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/default/tmpfs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/default/useradd" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/default/useradd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1XmLsnYPaymCJtup5AyTKsIHsY3" />
   <component name="ProjectViewState">
@@ -15,7 +56,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/axtract-3.1.0" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -39,14 +82,24 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="441" y="172" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581703844593">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="141" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581722256676">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state x="141" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.740@0.0.1366.740" timestamp="1581722256676" />
+    <state x="441" y="172" width="695" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581742218596">
+      <screen x="0" y="0" width="1366" height="740" />
     </state>
     <state x="441" y="172" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1581703844593" />
-    <state x="379" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1581700998955">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="441" y="172" width="695" height="403" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.740@0.0.1366.740" timestamp="1581742218596" />
+    <state x="172" y="4" width="1022" height="735" key="SettingsEditor" timestamp="1581742252574">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state x="172" y="4" width="1022" height="735" key="SettingsEditor/0.0.1366.740@0.0.1366.740" timestamp="1581742252574" />
+    <state x="379" y="194" key="com.intellij.ide.util.TipDialog" timestamp="1581722191479">
+      <screen x="0" y="0" width="1366" height="740" />
     </state>
     <state x="379" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1581700998955" />
+    <state x="379" y="194" key="com.intellij.ide.util.TipDialog/0.0.1366.740@0.0.1366.740" timestamp="1581722191479" />
     <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1581691802483">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

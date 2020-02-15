@@ -18,7 +18,6 @@ ENV PYTHONIOENCODING UTF-8
 # extra dependencies (over what buildpack-deps already includes)
 RUN apt-get update && apt-get install -y --no-install-recommends \
         apt-utils \
-        cron \
 		tk-dev \
 		net-tools \
 		vim \
@@ -30,6 +29,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		python-dev \
 		python-pip \
 		python-setuptools \
+		python-llfuse \
 		python-netsnmp \
 		python-support \
 		python-yaml \
@@ -92,13 +92,16 @@ RUN mkdir -p /opt/axtract \
     && mkdir -p /tmp/axtract
 
 RUN mkdir -p /data \
-    && mkdir -p /data/gridfs
+    && mkdir -p /data/gridfs_fuse \
+    && mkdir -p /data/rrddb-data \
+    && mkdir -p /data/rrddb-journal
 
 RUN mknod /dev/fuse c 10 229
 
 ENV DEPLOY_PATH /opt/axtract
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
+    cron \
     libboost-date-time1.55.0 \
     libboost-thread1.55.0 \
     libevent-2.0-5 \
@@ -111,6 +114,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libboost-program-options1.55.0 \
     libboost-regex1.55.0 \
     libfuse2 \
+    libfuse-dev \
     libmpfr4 \
     libmsgpack3 \
     libpython2.7 \
@@ -151,11 +155,14 @@ RUN rm -rf \
 
 COPY ./default /etc/default
 
-RUN cp /opt/axtract/contrib/etl/etl_config.py \
+COPY ./rabbitmq/rabbitmq.config \
+    /etc/rabbitmq/
+
+COPY ./celery/etl_config.py \
     /opt/axtract/etc/
 
 WORKDIR  /opt/axtract
 
-EXPOSE 8080
+EXPOSE 8080 5672 11300
 
 CMD ["python2"]

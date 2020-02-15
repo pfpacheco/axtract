@@ -1,4 +1,5 @@
 # Set this to true if the init-script should have any effect.
 SERVICE_ENABLED="true"
+
 LOGLEVEL="INFO"
 TAG=""

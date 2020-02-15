@@ -1,4 +1,3 @@
-    python -c "__import__('gevent')" > /dev/null 2>/dev/null
 # GID of the `tty' group
 TTYGRP=5
 
