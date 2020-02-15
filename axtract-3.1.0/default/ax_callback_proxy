@@ -11,10 +11,10 @@ SSL_KEY=""
 
 # Default configuration of CB Proxy
 # Change accordingly to deployment requirement
-CB_ADDR="127.0.0.1"
+CB_ADDR="172.17.0.2"
 CB_PORT="8080"
 CB_POOL="1000"
-ACS_ADDR="127.0.0.1"
+ACS_ADDR="172.17.0.2"
 ACS_PORT="9676"
 ACS_TIMEOUT="60"
 LOG_LEVEL="DEBUG"
@@ -25,7 +25,7 @@ LOG_LEVEL="DEBUG"
 # redis://ip:port/db0,redis://ip2:port2/db1
 # or
 # redis://ip:port,redis://ip2:port2/db0
-REDIS_SERVER="redis://127.0.0.1:6379/db0"
+REDIS_SERVER="redis://172.17.0.2:6379/db0"
 REDIS_TIMEOUT="30"
 
 ##################################################################

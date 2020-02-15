@@ -8,6 +8,7 @@
       <w>beanstalkd</w>
       <w>buildpack</w>
       <w>cairocffi</w>
+      <w>celeryd</w>
       <w>deamons</w>
       <w>debian</w>
       <w>deps</w>
@@ -39,6 +40,7 @@
       <w>lxml</w>
       <w>mibs</w>
       <w>mknod</w>
+      <w>mongo</w>
       <w>mongod</w>
       <w>mysqldb</w>
       <w>netaddr</w>

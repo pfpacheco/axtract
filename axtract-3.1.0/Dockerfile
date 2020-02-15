@@ -155,6 +155,10 @@ RUN rm -rf \
 
 COPY ./default /etc/default
 
+RUN rm -rf /etc/mongod.conf
+
+COPY ./mongo/mongod.conf /etc/
+
 COPY ./rabbitmq/rabbitmq.config \
     /etc/rabbitmq/
 
@@ -163,6 +167,6 @@ COPY ./celery/etl_config.py \
 
 WORKDIR  /opt/axtract
 
-EXPOSE 8080 5672 11300
+EXPOSE 8080 5672 11300 27017
 
 CMD ["python2"]

@@ -4,7 +4,7 @@ SERVICE_ENABLED="false"
 # Change this to configure the service.
 BIND_ADDRESS="0.0.0.0"
 BIND_PORT="8085"
-BEANSTALK_HOST="localhost"
+BEANSTALK_HOST="172.17.0.2"
 BEANSTALK_PORT="11300"
 
 EXTRA_ARGS="${EXTRA_ARGS} --bind-address=${BIND_ADDRESS} --bind-port=${BIND_PORT} --beanstalk-host=${BEANSTALK_HOST} --beanstalk-port=${BEANSTALK_PORT}"

@@ -6,5 +6,5 @@ SERVICE_ENABLED="true"
 
 # Variables for a Lab install (axtract + northbound-lab package)
 # See Admin Guide for instructions for a production install
-SUBSERVICES_START="rsyslog mongod ax.rrddb cron redis-server beanstalkd zeo apache2 ax.eventd ax.start_gui ax.start_nbi rabbitmq-server ax.gridfs_fuse"
-SUBSERVICES_STOP="ax.gridfs_fuse rabbitmq-server ax.start_nbi ax.start_gui ax.eventd apache2 zeo beanstalkd redis-server cron ax.rrddb mongod rsyslog"
+SUBSERVICES_START="rsyslog mongod ax.rrddb cron redis-server beanstalkd zeo apache2 ax.eventd ax.celeryd ax.start_gui ax.start_nbi rabbitmq-server ax.gridfs_fuse"
+SUBSERVICES_STOP="ax.gridfs_fuse rabbitmq-server ax.start_nbi ax.start_gui ax.celeryd ax.eventd apache2 zeo beanstalkd redis-server cron ax.rrddb mongod rsyslog"
