@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08c488ae-d80a-4040-96b6-52cf1f070cf2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/axtract-3.1.0/mongo/mongod.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ppacheco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/ppacheco.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/axtract-3.1.0/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/celery/etl_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/celery/etl_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/default/ax_beans_http_wrapper" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/default/ax_beans_http_wrapper" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/default/ax_callback_proxy" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/default/ax_callback_proxy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/default/axtract_all_daemons" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/default/axtract_all_daemons" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

@@ -169,4 +169,4 @@ WORKDIR  /opt/axtract
 
 EXPOSE 8080 5672 11300 27017
 
-CMD ["python2"]
+CMD ["/etc/init.d/axtract_all_daemons", "start"]

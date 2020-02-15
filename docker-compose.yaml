@@ -5,7 +5,6 @@ services:
   axtract-3.1.0:
     container_name: "axtract-3.1.0"
     build: "./axtract-3.1.0"
-    command: "/etc/init.d/axtract_all_daemons start"
     ports:
       - "8080:8080"
       - "5672:5672"
