@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08c488ae-d80a-4040-96b6-52cf1f070cf2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/axtract-3.1.0/custom_code/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.1.0/custom_code/axtract.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.1.0/full_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ppacheco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/ppacheco.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/axtract-3.1.0/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
@@ -10,6 +14,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,15 +68,15 @@
     </state>
     <state x="441" y="172" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1581703844593" />
     <state x="441" y="172" width="695" height="403" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.740@0.0.1366.740" timestamp="1581742218596" />
-    <state x="172" y="4" width="1022" height="735" key="SettingsEditor" timestamp="1581742252574">
+    <state x="172" y="4" width="1022" height="735" key="SettingsEditor" timestamp="1581830686501">
       <screen x="0" y="0" width="1366" height="740" />
     </state>
-    <state x="172" y="4" width="1022" height="735" key="SettingsEditor/0.0.1366.740@0.0.1366.740" timestamp="1581742252574" />
-    <state x="379" y="194" key="com.intellij.ide.util.TipDialog" timestamp="1581722191479">
+    <state x="172" y="4" width="1022" height="735" key="SettingsEditor/0.0.1366.740@0.0.1366.740" timestamp="1581830686501" />
+    <state x="379" y="194" key="com.intellij.ide.util.TipDialog" timestamp="1581826145415">
       <screen x="0" y="0" width="1366" height="740" />
     </state>
     <state x="379" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1581700998955" />
-    <state x="379" y="194" key="com.intellij.ide.util.TipDialog/0.0.1366.740@0.0.1366.740" timestamp="1581722191479" />
+    <state x="379" y="194" key="com.intellij.ide.util.TipDialog/0.0.1366.740@0.0.1366.740" timestamp="1581826145415" />
     <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1581691802483">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

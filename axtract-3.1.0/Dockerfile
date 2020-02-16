@@ -24,6 +24,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		xterm \
 		netbase \
 		apache2 \
+		fuse \
+		makedev \
+		xterm \
 		redis-server \
 		python \
 		python-dev \
@@ -44,6 +47,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         python-mysqldb \
         python-gevent \
         python-soappy \
+        python-pymongo \
         rsyslog \
 	&& rm -rf /var/lib/apt/lists/*
 
@@ -167,6 +171,13 @@ COPY ./celery/etl_config.py \
 
 WORKDIR  /opt/axtract
 
-EXPOSE 8080 5672 11300 27017
+RUN rm -rf custom_code/* \
+    && rm -rf full_config.json
 
-CMD ["/etc/init.d/axtract_all_daemons", "start"]
+RUN mkdir -p custom_code
+
+COPY ./custom_code /opt/axtract/custom_code
+
+COPY ./full_config.json /opt/axtract/
+
+EXPOSE 7547 8080 5672 11300 27017

@@ -5,18 +5,22 @@
       <w>axess</w>
       <w>axlib</w>
       <w>axtract</w>
+      <w>bdce</w>
       <w>beanstalkd</w>
       <w>buildpack</w>
       <w>cairocffi</w>
       <w>celeryd</w>
+      <w>cpes</w>
       <w>deamons</w>
       <w>debian</w>
       <w>deps</w>
+      <w>dest</w>
       <w>dpkg</w>
       <w>erlang</w>
       <w>eventd</w>
       <w>fstab</w>
       <w>gevent</w>
+      <w>gpvs</w>
       <w>gridfs</w>
       <w>htcacheclean</w>
       <w>initscripts</w>
@@ -35,9 +39,11 @@
       <w>libsnappy</w>
       <w>libtbb</w>
       <w>libyajl</w>
+      <w>llfuse</w>
       <w>loglevel</w>
       <w>logrotate</w>
       <w>lxml</w>
+      <w>maxrate</w>
       <w>mibs</w>
       <w>mknod</w>
       <w>mongo</w>
@@ -46,9 +52,12 @@
       <w>netaddr</w>
       <w>netbase</w>
       <w>netsnmp</w>
+      <w>noisemargin</w>
       <w>ntpdate</w>
       <w>poweroff</w>
+      <w>prio</w>
       <w>proc</w>
+      <w>pymongo</w>
       <w>pyparsing</w>
       <w>pythonioencoding</w>
       <w>rabbitmq</w>
@@ -70,6 +79,7 @@
       <w>ttygrp</w>
       <w>ttymode</w>
       <w>ulimit</w>
+      <w>uptime</w>
       <w>wget</w>
       <w>workdir</w>
     </words>
