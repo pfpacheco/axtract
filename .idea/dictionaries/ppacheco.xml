@@ -42,6 +42,7 @@
       <w>llfuse</w>
       <w>loglevel</w>
       <w>logrotate</w>
+      <w>loopback</w>
       <w>lxml</w>
       <w>maxrate</w>
       <w>mibs</w>
