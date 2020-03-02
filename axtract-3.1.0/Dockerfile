@@ -100,8 +100,6 @@ RUN mkdir -p /data \
     && mkdir -p /data/rrddb-data \
     && mkdir -p /data/rrddb-journal
 
-RUN mknod /dev/fuse c 10 229
-
 ENV DEPLOY_PATH /opt/axtract
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -117,8 +115,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libboost-iostreams1.55.0 \
     libboost-program-options1.55.0 \
     libboost-regex1.55.0 \
-    libfuse2 \
-    libfuse-dev \
     libmpfr4 \
     libmsgpack3 \
     libpython2.7 \
@@ -180,4 +176,4 @@ COPY ./custom_code /opt/axtract/custom_code
 
 COPY ./full_config.json /opt/axtract/
 
-EXPOSE 7547 8080 5672 11300 27017
+RUN mknod /dev/fuse c 10 229
