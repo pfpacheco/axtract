@@ -15,4 +15,4 @@ services:
       - axtract_vol:/var/volumes/axtract
 
 volumes:
-  axtract_vol: null
+  axtract_vol:

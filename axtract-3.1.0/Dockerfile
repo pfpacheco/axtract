@@ -176,4 +176,8 @@ COPY ./custom_code /opt/axtract/custom_code
 
 COPY ./full_config.json /opt/axtract/
 
-RUN mknod /dev/fuse c 10 229
+RUN chown www-data:www-data /etc/init.d/ax.gridfs_fuse
+
+RUN mknod /dev/fuse c 10 229.
+
+EXPOSE 8080

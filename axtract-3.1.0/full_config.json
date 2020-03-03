@@ -97,7 +97,10 @@
     },
     "cpe_store": {
       "cpe_store": {
-        "mongo_srv": {},
+        "mongo_srv": {
+          "host": "172.17.0.2",
+          "port": 27017
+        },
         "database": "axtract",
         "collection": "cpes"
       }

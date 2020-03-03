@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08c488ae-d80a-4040-96b6-52cf1f070cf2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ppacheco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/ppacheco.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/axtract-3.1.0/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/default/rabbitmq-server" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/default/rabbitmq-server" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/full_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/full_config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +36,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/axtract-3.1.0" />
       <recent name="C:\Users\ppacheco\workspace\axtract\axtract-3.1.0" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -66,10 +67,11 @@
     </state>
     <state x="441" y="172" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1581703844593" />
     <state x="441" y="172" width="695" height="403" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.740@0.0.1366.740" timestamp="1581742218596" />
-    <state x="1682" y="28" width="1022" height="735" key="SettingsEditor" timestamp="1583183527508">
-      <screen x="1440" y="23" width="1920" height="1010" />
+    <state x="1682" y="5" width="1022" height="735" key="SettingsEditor" timestamp="1583252640302">
+      <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state x="172" y="4" width="1022" height="735" key="SettingsEditor/0.0.1366.740@0.0.1366.740" timestamp="1581830686501" />
+    <state x="1682" y="5" key="SettingsEditor/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1583252640302" />
     <state x="1682" y="28" key="SettingsEditor/0.23.1440.877/1440.23.1920.1010@1440.23.1920.1010" timestamp="1583183527508" />
     <state x="400" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1582783099574">
       <screen x="0" y="0" width="1440" height="900" />
