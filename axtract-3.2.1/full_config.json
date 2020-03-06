@@ -1,0 +1,298 @@
+{
+  "tr_069_collectors": {
+    "main_collector": {
+      "collector_ip": "0.0.0.0",
+      "collector_port": 7547,
+      "store": "cpe_store",
+      "inventory_dest": [
+        "inventory_to_queue"
+      ],
+      "acs_behind": {
+        "axess": {
+          "host": "127.0.0.1",
+          "port": 9675
+        }
+      }
+    }
+  },
+  "rrddb": {
+    "memory_usage": {
+      "soft_limit": "1 GB",
+      "hard_limit": "2 GB"
+    },
+    "write_io_threads": 4,
+    "read_io_threads": 4,
+    "storage_config": {},
+    "databases": {
+      "main": {
+        "directory": "/data/rrddb-data",
+        "journal_directory": "/data/rrddb-journal",
+        "journal_max_size": "512 MB",
+        "journal_archive": {
+          "max_size": "0b",
+          "min_age": "0s"
+        },
+        "max_age": "2m",
+        "definitions": {
+          "ts.?.dsl": {
+            "step": "1m",
+            "dss": {
+              "up_noisemargin": {
+                "dss_type": "GAUGE",
+                "heartbeat": "2m",
+                "min": 0
+              },
+              "up_rate": {
+                "dss_type": "GAUGE",
+                "heartbeat": "2m",
+                "min": 0
+              },
+              "up_maxrate": {
+                "dss_type": "GAUGE",
+                "heartbeat": "2m",
+                "min": 0
+              },
+              "up_power": {
+                "dss_type": "GAUGE",
+                "heartbeat": "2m",
+                "min": 0
+              },
+              "up_attenuation": {
+                "dss_type": "GAUGE",
+                "heartbeat": "2m",
+                "min": 0
+              },
+              "bytes_received": {
+                "dss_type": "COUNTER",
+                "heartbeat": "2m",
+                "min": 0
+              },
+              "bytes_sent": {
+                "dss_type": "COUNTER",
+                "heartbeat": "2m",
+                "min": 0
+              }
+            },
+            "rra": {
+              "daily": {
+                "cons_func": "AVERAGE",
+                "steps": 1,
+                "rows": 2880
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "stores": {
+    "rrd_store": {
+      "rrddb": {
+        "rrddb_conn": {
+          "primary": {
+            "host": "127.0.0.1"
+          }
+        }
+      }
+    },
+    "cpe_store": {
+      "cpe_store": {
+        "mongo_srv": {
+          "host": "172.17.0.2",
+          "port": 27017
+        },
+        "database": "axtract",
+        "collection": "cpes"
+      }
+    },
+    "event_store": {}
+  },
+  "constraints": {
+    "resets": {
+      "uptime": {
+        "type": "uptime",
+        "prop": "uptime"
+      }
+    },
+    "properties": {
+      "_default": {
+        "reset": [
+          "uptime"
+        ],
+        "limit": []
+      }
+    }
+  },
+  "event_sources": {
+    "event_queues": {
+      "inventory_from_queue": {
+        "beans_server": {
+          "beans1": {}
+        },
+        "parallel_processes": 2,
+        "tube": "inventory",
+        "send_to": [
+          "inventory_module"
+        ]
+      },
+      "statistics_gpvs": {
+        "beans_server": {
+          "beans1": {}
+        },
+        "parallel_processes": 1,
+        "tube": "gpvs",
+        "send_to": [
+          "ts_for_cpes",
+          "derive"
+        ]
+      }
+    }
+  },
+  "event_modules": {
+    "statistics_gpvs": {
+      "type": "event_to_queue",
+      "event_to_queue": {
+        "tube": "gpvs",
+        "parallel_tubes": 1,
+        "beans_server": {
+          "beans1": {}
+        }
+      }
+    },
+    "inventory_to_queue": {
+      "type": "event_to_queue",
+      "event_to_queue": {
+        "tube": "inventory",
+        "parallel_tubes": 2,
+        "beans_server": {
+          "beans1": {}
+        }
+      }
+    },
+    "inventory_module": {
+      "type": "inventory",
+      "inventory": {}
+    },
+    "ts_for_cpes": {
+      "type": "ts_for_cpes",
+      "ts_for_cpes": {
+        "rrd_store": "rrddb",
+        "namespace": "ts"
+      }
+    },
+    "keep_recent": {
+      "type": "handle_mode_properties",
+      "handle_mode_properties": {
+        "prefix": "ax"
+      }
+    },
+    "derive": {
+      "type": "counter_processing",
+      "send_to": [
+        "keep_recent"
+      ],
+      "counter_processing": {
+        "prefix": "ax",
+        "props_to_store": [
+          "uptime"
+        ]
+      }
+    }
+  },
+  "collection_modes": {
+    "default": {
+      "periodic_inform_interval": -1,
+      "send_to": [],
+      "collection_method": "no_operation",
+      "parameters": []
+    },
+    "collect_data": {
+      "periodic_inform_interval": 60,
+      "send_to": [
+        "statistics_gpvs"
+      ],
+      "collection_method": "gpv",
+      "parameters": {
+        "uptime": {
+          "tr_value_long": "DeviceInfo.UpTime",
+          "action": [
+            "keep_recent"
+          ]
+        },
+        "dsl.up_noisemargin": {
+          "tr_value_long": "WANDevice.1.WANDSLInterfaceConfig.UpstreamNoiseMargin",
+          "action": [
+            "ts_for_cpes"
+          ]
+        },
+        "dsl.up_rate": {
+          "tr_value_long": "WANDevice.1.WANDSLInterfaceConfig.UpstreamCurrRate",
+          "action": [
+            "ts_for_cpes"
+          ]
+        },
+        "dsl.up_maxrate": {
+          "tr_value_long": "WANDevice.1.WANDSLInterfaceConfig.UpstreamMaxRate",
+          "action": [
+            "ts_for_cpes"
+          ]
+        },
+        "dsl.up_power": {
+          "tr_value_long": "WANDevice.1.WANDSLInterfaceConfig.UpstreamPower",
+          "action": [
+            "ts_for_cpes"
+          ]
+        },
+        "dsl.up_attenuation": {
+          "tr_value_long": "WANDevice.1.WANDSLInterfaceConfig.UpstreamAttenuation",
+          "action": [
+            "ts_for_cpes"
+          ]
+        },
+        "dsl.bytes_received": {
+          "tr_value_long": "WANDevice.1.WANConnectionDevice.1.WANPPPConnection.1.Stats.EthernetBytesReceived",
+          "action": [
+            "ts_for_cpes",
+            "derive"
+          ]
+        },
+        "dsl.bytes_sent": {
+          "tr_value_long": "WANDevice.1.WANConnectionDevice.1.WANPPPConnection.1.Stats.EthernetBytesSent",
+          "action": [
+            "ts_for_cpes",
+            "derive"
+          ]
+        },
+        "ax.diff.dsl.bytes_received": {
+          "action": [
+            "keep_recent"
+          ]
+        },
+        "ax.diff.dsl.bytes_sent": {
+          "action": [
+            "keep_recent"
+          ]
+        },
+        "ax.rate.dsl.bytes_received": {
+          "action": [
+            "keep_recent"
+          ]
+        },
+        "ax.rate.dsl.bytes_sent": {
+          "action": [
+            "keep_recent"
+          ]
+        }
+      }
+    }
+  },
+  "rules": [
+    {
+      "prio": 1,
+      "match": [
+        "props.DI.SV=~L411.*"
+      ],
+      "mode_name": "collect_data"
+    }
+  ]
+}

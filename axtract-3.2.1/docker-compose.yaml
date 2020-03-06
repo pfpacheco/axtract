@@ -1,0 +1,51 @@
+version: "3.5"
+
+services:
+
+  redis:
+    container_name: "redis"
+    image: "redis:latest"
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_volume:/var/volumes/redis
+
+  mongo:
+    container_name: "mongo"
+    image: "mongo:4.0.10"
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_volume:/var/volumes/mongodb
+
+  rabbitmq:
+    container_name: "rabbitmq"
+    image: "rabbitmq:latest"
+    ports:
+      - "5672:5672"
+    volumes:
+      - rabbitmq_volume:/var/volumes/rabbitmq
+
+  axtract:
+    container_name: "axtract-3.2.1"
+    build: "."
+    ports:
+      - "0.0.0.0:8080:8080"
+    command: /etc/init.d/axtract_all_daemons start
+    depends_on:
+      - redis
+      - mongo
+      - rabbitmq
+    volumes:
+      - axtract_volume:/var/volumes/axtract-3.2.1
+
+networks:
+  default:
+    name: axtract_network
+    driver: bridge
+
+volumes:
+  redis_volume:
+  mongodb_volume:
+  rabbitmq_volume:
+  axtract_volume:

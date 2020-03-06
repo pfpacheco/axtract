@@ -2,10 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08c488ae-d80a-4040-96b6-52cf1f070cf2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/celery/etl_config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/custom_code/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/custom_code/axtract.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/apache2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/ax.celeryd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/ax.eventd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/ax.gridfs_fuse" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/ax.moving_statsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/ax.rrddb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/ax.start_gui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/ax.start_nbi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/ax.uwsgi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/ax_beans_http_wrapper" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/ax_callback_proxy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/ax_udp_echo_plus" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/ax_udp_proxy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/axess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/axtract_all_daemons" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/axtract_all_daemonse" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/beanstalkd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/beanstalkde" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/cron" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/devpts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/halt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/hwclock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/nss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/rabbitmq-server" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/rcS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/redis-server" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/rsyslog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/snmpd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/snmpd.axlib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/tmpfs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/useradd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/full_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/mongo/mongod.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/rabbitmq/rabbitmq.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ppacheco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/ppacheco.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/axtract-3.1.0/full_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.1.0/full_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,16 +67,17 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/axtract-3.2.1" />
     <property name="settings.editor.selected.configurable" value="Erlang External Tools" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/axtract-3.2.1" />
+      <recent name="C:\Users\ppacheco\workspace\axtract\axtract-3.1.0" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/axtract-3.1.0" />
-      <recent name="C:\Users\ppacheco\workspace\axtract\axtract-3.1.0" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ppacheco\workspace\axtract\axtract-3.1.0" />
     </key>
   </component>
@@ -62,16 +99,17 @@
       <screen x="0" y="0" width="1366" height="740" />
     </state>
     <state x="141" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.740@0.0.1366.740" timestamp="1581722256676" />
-    <state x="441" y="172" width="695" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581742218596">
-      <screen x="0" y="0" width="1366" height="740" />
+    <state x="2060" y="251" width="695" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583415139753">
+      <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state x="441" y="172" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1581703844593" />
     <state x="441" y="172" width="695" height="403" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.740@0.0.1366.740" timestamp="1581742218596" />
-    <state x="1682" y="5" width="1022" height="735" key="SettingsEditor" timestamp="1583252640302">
+    <state x="2060" y="251" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1583415139753" />
+    <state x="1682" y="5" width="1022" height="735" key="SettingsEditor" timestamp="1583412837898">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state x="172" y="4" width="1022" height="735" key="SettingsEditor/0.0.1366.740@0.0.1366.740" timestamp="1581830686501" />
-    <state x="1682" y="5" key="SettingsEditor/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1583252640302" />
+    <state x="1682" y="5" key="SettingsEditor/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1583412837898" />
     <state x="1682" y="28" key="SettingsEditor/0.23.1440.877/1440.23.1920.1010@1440.23.1920.1010" timestamp="1583183527508" />
     <state x="400" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1582783099574">
       <screen x="0" y="0" width="1440" height="900" />

@@ -1,0 +1,26 @@
+# Change this to "true" to enable the service.
+SERVICE_ENABLED="false"
+
+# Change this to configure the service.
+BIND_ADDRESS="0.0.0.0"
+BIND_PORT="8085"
+BEANSTALK_HOST="172.17.0.2"
+BEANSTALK_PORT="11300"
+
+EXTRA_ARGS="${EXTRA_ARGS} --bind-address=${BIND_ADDRESS} --bind-port=${BIND_PORT} --beanstalk-host=${BEANSTALK_HOST} --beanstalk-port=${BEANSTALK_PORT}"
+
+#### DO NOT TOUCH THIS CODE. IT DOES SOME CHECKS THAT ALL PACKAGES ARE INSTALLED
+
+# Only check if service is enabled.
+if [ x${SERVICE_ENABLED} = "xtrue" ]; then
+
+    python -c "__import__('gevent')" > /dev/null 2>/dev/null
+    if [ $? -ne 0 ]; then
+        echo "ERROR: python-gevent is not installed. Call apt-get install python-gevent."
+    fi
+
+    python -c "__import__('simplejson')" > /dev/null 2>/dev/null
+    if [ $? -ne 0 ]; then
+        echo "ERROR: python-simplejson is not installed. Call apt-get install python-simplejson."
+    fi
+fi
