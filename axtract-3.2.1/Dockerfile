@@ -4,7 +4,7 @@
 # PLEASE DO NOT EDIT IT DIRECTLY.
 #
 
-FROM debian:jessie
+FROM buildpack-deps:jessie
 
 # ensure local python is preferred over distribution python
 ENV PATH /usr/local/bin:$PATH
@@ -27,7 +27,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		fuse \
 		makedev \
 		xterm \
-	    # redis-server \
 		python \
 		python-dev \
 		python-pip \
@@ -49,6 +48,29 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         python-soappy \
         python-pymongo \
         rsyslog \
+        cron \
+        libcurl3 \
+        libboost-date-time1.55.0 \
+        libboost-thread1.55.0 \
+        libevent-2.0-5 \
+        libsasl2-2 \
+        libsnappy1 \
+        libatomic1 \
+        libyajl2 \
+        libboost-filesystem1.55.0 \
+        libboost-iostreams1.55.0 \
+        libboost-program-options1.55.0 \
+        libboost-regex1.55.0 \
+        libsasl2-modules \
+        libmpfr4 \
+        libmsgpack3 \
+        libpython2.7 \
+        libtbb2 \
+        libxml2 \
+        rrdtool \
+        erlang-nox \
+        logrotate \
+        socat \
 	&& rm -rf /var/lib/apt/lists/*
 
 ENV TERM xterm
@@ -102,31 +124,6 @@ RUN mkdir -p /data \
 
 ENV DEPLOY_PATH /opt/axtract
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    cron \
-    libcurl3 \
-    libboost-date-time1.55.0 \
-    libboost-thread1.55.0 \
-    libevent-2.0-5 \
-    libsasl2-2 \
-    libsnappy1 \
-    libatomic1 \
-    libyajl2 \
-    libboost-filesystem1.55.0 \
-    libboost-iostreams1.55.0 \
-    libboost-program-options1.55.0 \
-    libboost-regex1.55.0 \
-    libsasl2-modules \
-    libmpfr4 \
-    libmsgpack3 \
-    libpython2.7 \
-    libtbb2 \
-    libxml2 \
-    rrdtool \
-    erlang-nox \
-    logrotate \
-    socat
-
 COPY . /tmp/axtract
 
 WORKDIR  /tmp/axtract
@@ -143,8 +140,6 @@ RUN dpkg -i ./all-packages/axlib*.deb \
     && dpkg -i ./all-packages/mongodb-org-tools*.deb \
     && dpkg -i ./all-packages/mongodb-org-shell*.deb \
     && dpkg -i ./all-packages/mongodb-org-mongos*.deb
-    # && dpkg -i ./all-packages/mongodb-org_4.0.10_amd64.deb
-    # && dpkg -i ./all-packages/rabbitmq-server*.deb
 
 RUN sed -ie "s/#START=yes/START=yes/g" \
     /etc/default/beanstalkd

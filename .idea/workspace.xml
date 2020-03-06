@@ -2,46 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08c488ae-d80a-4040-96b6-52cf1f070cf2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/celery/etl_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/custom_code/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/custom_code/axtract.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/apache2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/ax.celeryd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/ax.eventd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/ax.gridfs_fuse" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/ax.moving_statsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/ax.rrddb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/ax.start_gui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/ax.start_nbi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/ax.uwsgi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/ax_beans_http_wrapper" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/ax_callback_proxy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/ax_udp_echo_plus" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/ax_udp_proxy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/axess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/axtract_all_daemons" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/axtract_all_daemonse" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/beanstalkd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/beanstalkde" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/cron" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/devpts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/halt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/hwclock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/nss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/rabbitmq-server" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/rcS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/redis-server" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/rsyslog" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/snmpd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/snmpd.axlib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/tmpfs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/default/useradd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/full_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/mongo/mongod.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axtract-3.2.1/rabbitmq/rabbitmq.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ppacheco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/ppacheco.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.2.1/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.2.1/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
