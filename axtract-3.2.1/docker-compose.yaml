@@ -1,4 +1,4 @@
-version: "3.5"
+version: "3.2"
 
 services:
 
@@ -30,8 +30,7 @@ services:
     container_name: "axtract-3.2.1"
     build: "."
     ports:
-      - "0.0.0.0:8080:8080"
-    command: /etc/init.d/axtract_all_daemons start
+      - "8080:8080"
     depends_on:
       - redis
       - mongo
@@ -39,13 +38,9 @@ services:
     volumes:
       - axtract_volume:/var/volumes/axtract-3.2.1
 
-networks:
-  default:
-    name: axtract_network
-    driver: bridge
-
 volumes:
   redis_volume:
   mongodb_volume:
   rabbitmq_volume:
   axtract_volume:
+

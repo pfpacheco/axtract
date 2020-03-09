@@ -5,7 +5,7 @@ SERVICE_ENABLED="true"
 GRIDFS_FUSE_MOUNT_POINT="/data/gridfs_fuse"
 
 # See http://docs.mongodb.org/manual/reference/connection-string/
-GRIDFS_FUSE_MONGODB_URI="mongodb://mongo:27017"
+GRIDFS_FUSE_MONGODB_URI="mongodb://172.17.0.1:27017"
 
 # Name of the database within mongodb. Default is 'gridfs_fuse' only define it if needed.
 # GRIDFS_FUSE_DATABASE="gridfs_fuse"

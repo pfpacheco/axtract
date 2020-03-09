@@ -1,5 +1,5 @@
 # The node were rabbitmq is running.
-BROKER_URL = 'amqp://guest:guest@rabbitmq:5672//'
+BROKER_URL = 'amqp://guest:guest@172.17.0.1:5672//'
 
 # With this setting celeryd kills the worker process for each task.
 # Useful if your tasks use much memory.

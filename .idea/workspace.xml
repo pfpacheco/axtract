@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="08c488ae-d80a-4040-96b6-52cf1f070cf2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/axtract-3.2.1/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.2.1/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.2.1/celery/etl_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.2.1/celery/etl_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.2.1/custom_code/axtract.py" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.2.1/custom_code/axtract.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.2.1/default/ax.gridfs_fuse" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.2.1/default/ax.gridfs_fuse" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.2.1/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.2.1/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.2.1/mongo/mongod.conf" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.2.1/mongo/mongod.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
