@@ -3,16 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="08c488ae-d80a-4040-96b6-52cf1f070cf2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/axtract-3.2.1/celery/etl_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.2.1/celery/etl_config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/axtract-3.2.1/custom_code/axtract.py" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.2.1/custom_code/axtract.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/axtract-3.2.1/default/ax.gridfs_fuse" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.2.1/default/ax.gridfs_fuse" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/axtract-3.2.1/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.2.1/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/axtract-3.2.1/mongo/mongod.conf" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.2.1/mongo/mongod.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axtract-3.2.1/full_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/axtract-3.2.1/full_config.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="axtract" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -37,15 +37,27 @@
     <property name="settings.editor.selected.configurable" value="Erlang External Tools" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/axtract-3.2.1" />
-      <recent name="C:\Users\ppacheco\workspace\axtract\axtract-3.1.0" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/axtract-3.1.0" />
       <recent name="C:\Users\ppacheco\workspace\axtract\axtract-3.1.0" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/axtract-3.2.1" />
+      <recent name="C:\Users\ppacheco\workspace\axtract\axtract-3.1.0" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -83,9 +95,10 @@
     <state x="379" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1581700998955" />
     <state x="379" y="194" key="com.intellij.ide.util.TipDialog/0.0.1366.740@0.0.1366.740" timestamp="1581826145415" />
     <state x="400" y="241" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1582783099574" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1581691802483">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="1926" y="104" width="945" height="928" key="search.everywhere.popup" timestamp="1583937384253">
+      <screen x="1440" y="23" width="1920" height="1010" />
     </state>
     <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1581691802483" />
+    <state x="1926" y="104" width="945" height="928" key="search.everywhere.popup/0.23.1440.877/1440.23.1920.1010@1440.23.1920.1010" timestamp="1583937384253" />
   </component>
 </project>

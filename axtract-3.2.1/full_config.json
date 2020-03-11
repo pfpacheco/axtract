@@ -124,6 +124,18 @@
     }
   },
   "event_sources": {
+    "custom_event_sources": {
+      "hello_source": {
+        "send_to": [],
+        "factory_name": "axtract.hello_from_axtract_factory",
+        "config": [
+          {
+            "name_": "the_hello",
+            "value": "This is the hello source from axtract !!!"
+          }
+        ]
+      }
+    },
     "event_queues": {
       "inventory_from_queue": {
         "beans_server": {
