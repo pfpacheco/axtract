@@ -5,27 +5,31 @@ import logging
 import time
 
 
-class HelloFromAxtract(object):
+class MyEventSource(object):
+    """ This is the HelloFromAxtract source event class """
 
     def __init__(self, caller, name, config, index, chain=None):
         """ This is the init method """
+
         # When you use this skeleton, move these imports to the top of the file.
 
         self.logger = logging.getLogger("%s.%s" % (__name__, name))
-        self.logger.debug("HelloFromAxtract.__init__: starting...")
+        self.logger.debug("MyEventSource.__init__: starting...")
 
         # convert the config objects into a python dictionary
-        config = {item['name_']: item['value'] for item in config.values()}
+        config = {item["operation"]: item["values"] for item in config.values()}
 
         self.caller = caller
         self.name = name
         self.config = config
         self.index = index
         self.ev_mod_chain = chain
-        self.logger.debug("HelloFromAxtract.__init__: finished.")
+        self.logger.debug("MyEventSource.__init__: finished.")
 
     def run(self):
-        self.logger.debug("HelloFromAxtract.run: starting...")
+        """ This is the run method and must be overri """
+
+        self.logger.debug("MyEventSource.run: starting...")
 
         while not self.caller.shutdown_requested:
             try:
@@ -37,11 +41,11 @@ class HelloFromAxtract(object):
             else:
                 self.logger.debug("Event successfully created and processed")
 
-            self.logger.debug("Message: %s", self.config.get("the_hello"))
+            self.logger.debug("Operation: %s and %s" % (self.config.get("operation"), self.config.get("values")))
 
-        self.logger.debug("HelloFromAxtract.run: finished.")
+        self.logger.debug("MyEventSource.run: finished.")
 
 
-def hello_from_axtract_factory(caller, name, config, index, chain=None):
+def my_event_source_factory(caller, name, config, index, chain=None):
     """ This is the standard factory name for hello """
-    return HelloFromAxtract(caller, name, config, index, chain=chain)
+    return MyEventSource(caller, name, config, index, chain=chain)

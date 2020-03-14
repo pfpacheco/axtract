@@ -1,4 +1,4 @@
-version: "3.2"
+version: "3.7"
 
 services:
 
@@ -43,4 +43,3 @@ volumes:
   mongodb_volume:
   rabbitmq_volume:
   axtract_volume:
-

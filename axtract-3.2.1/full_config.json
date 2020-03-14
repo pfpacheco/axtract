@@ -98,14 +98,24 @@
     "cpe_store": {
       "cpe_store": {
         "mongo_srv": {
-          "host": "172.17.0.2",
+          "host": "172.17.0.1",
           "port": 27017
         },
         "database": "axtract",
         "collection": "cpes"
       }
     },
-    "event_store": {}
+    "event_store": {
+      "my_event_inventory": {
+        "mongo_srv": {
+          "host": "172.17.0.1",
+          "port": 27017
+        },
+        "database": "mydb",
+        "collection": "mycollection"
+
+      }
+    }
   },
   "constraints": {
     "resets": {
@@ -125,18 +135,20 @@
   },
   "event_sources": {
     "custom_event_sources": {
-      "hello_source": {
-        "send_to": [],
-        "factory_name": "axtract.hello_from_axtract_factory",
-        "config": [
-          {
-            "name_": "the_hello",
-            "value": "This is the hello source from axtract !!!"
-          }
-        ]
+      "my_custom_event_source": {
+        "send_to": [ "my_custom_event_module"],
+        "factory_name": "sample.my_event_source.my_event_source_factory"
       }
     },
     "event_queues": {
+      "my_distribution_source": {
+        "beans_server": {
+          "beans1": {}
+        },
+        "parallel_processes": 2,
+        "tube": "my_distribution",
+        "send_to": ["my_custom_event_module"]
+      },
       "inventory_from_queue": {
         "beans_server": {
           "beans1": {}
@@ -161,6 +173,23 @@
     }
   },
   "event_modules": {
+    "my_custom_event_module": {
+      "type": "custom_event_module",
+      "send_to": ["my_event_to_store"],
+      "custom_event_module": {
+        "factory_name": "sample.my_event_module.my_event_module_factory",
+        "config": {
+          "name_": "div",
+          "value": [16, 8]
+        }
+      }
+    },
+    "my_event_to_store": {
+      "type": "event_to_store",
+      "event_to_store": {
+        "event_store": "my_event_inventory"
+      }
+    },
     "statistics_gpvs": {
       "type": "event_to_queue",
       "event_to_queue": {
